@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Share Tech", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+    --green: #086840;
+    --blue: #204568;
+    --gray: #9b9b9b;
+    --light: #699769;
+    --black: #070707;
+    --white: #f4eaea;
+    --tomato: #f45235;
+}
+body{
+    background: var(--white);
+    border: solid 1px;
+    width: 100%;
+    height: 100dvh;
+}
+header{
+    border: solid 1px;
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+}
+header div{
+    width: clamp(95%, 1.7vw, 20rem);
+    width: 100%;
+    height: 125px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+header div:first-child{
+    text-align: center;
+}
+header div:last-child{
+    background-color: var(--green);
+    font-size:clamp(1rem, 1.7vw, 1.5rem);
+}
+header div p{
+    max-width: 500px;
+    padding: 1%;
+    border-radius: 12px;
+    max-width: 800px;
+}
+.section_All_Elements{
+    width: clamp(95%, 1.7vw, 20rem);
+    margin: 1% auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#span_Text_Ramdom{
+    background-color: var(--light);
+    width: clamp(80%, 1.7vw, 32rem);
+    max-width: 800px;
+    height: clamp(5rem, 1.7vw, 2rem);
+
+    font-size:clamp(1.1rem, 1.7vw, 2rem);
+    padding: 1% 3%;
+}
+.section_All_Elements textarea{
+    width: clamp(80%, 1.7vw, 10rem);
+    font-size:clamp(.9rem, 1.7vw, 2rem);
+    max-width: 800px;
+    height: 9rem;
+    max-height: 200px;
+    padding: 9px 8px;
+    border: solid 9px var(--gray);
+    border-radius: 1rem;
+    outline: none;
+    color: var(--black);
+}
+
+.div_span_Timer_Btn_Reset{
+    width: clamp(80%, 1.7vw, 10rem);
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#span_Timer{
+    font-size: clamp(1.2rem, 1.7vw, 1.7rem);
+    color: var(--black);
+}
+
+#btn_Reset{
+    max-width: 300px;
+    width: clamp(50%, 1.7vw, 3rem);
+    height: 60px;
+    color: var(--tomato);
+    cursor: pointer;
+    background: transparent;
+    border: solid 3px var(--tomato);
+    font-size: clamp(.9rem, 1.7vw, 2rem);
+    transition: .9s;
+}
+#btn_Reset:hover{
+    border: none;
+    background: var(--tomato);
+    color: var(--white);
+    transition: .9s;
+}

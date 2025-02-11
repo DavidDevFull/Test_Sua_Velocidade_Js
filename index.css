@@ -12,10 +12,11 @@
     --green: #086840;
     --blue: #204568;
     --gray: #9b9b9b;
-    --light: #699769;
+    --light_Green: #699769;
     --black: #070707;
     --white: #f4eaea;
     --tomato: #f45235;
+    --yellow: #dea011;
 }
 body{
     background: var(--white);
@@ -30,9 +31,9 @@ header{
     height: 250px;
     display: flex;
     flex-direction: column;
-    background-color: var(--black);
+    background-color: var(--green);
 }
-header div{
+.div_H1_Span_Score_Theme{
     width: clamp(95%, 1.7vw, 20rem);
     width: 100%;
     height: 125px;
@@ -41,20 +42,50 @@ header div{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 2%;
 }
-header div:first-child{
-    text-align: center;
+.div_H1_Span_Score_Theme div span{
+    font-size: clamp(1.2rem, 1.7vw, 2rem);
 }
-header div:last-child{
-    background-color: var(--green);
+header div:first-child{
+    background: var(--black);
     font-size:clamp(1rem, 1.7vw, 1.5rem);
 }
+.div_Span_Score_Theme{
+    border: solid 1px;
+    width: clamp(85%, 1.7vw, 32rem);
+    max-width: 800px;
+    height: 30px;
+    margin: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.div_Span_Score_Theme button{
+    width: clamp(2.7rem, 1.7vw, 3rem);
+    height: clamp(2.7rem, 1.7vw, 3rem) ;
+    border: solid 3px purple;
+    border-radius: 7px;
+    cursor: pointer;
+    background: var(--yellow);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div_Span_Score_Theme button img{
+    width: clamp(2.3rem, 1.7vw, 2.5rem);
+}
+
 header div p{
     max-width: 500px;
-    padding: 1%;
+    padding: 2%;
     border-radius: 12px;
     max-width: 800px;
+    margin: 1% auto;
+
 }
 .section_All_Elements{
     width: clamp(95%, 1.7vw, 20rem);
@@ -66,14 +97,14 @@ header div p{
     flex-direction: column;
     gap: 1.5rem;
 }
-#span_Text_Ramdom{
-    background-color: var(--light);
+#p_Text_Ramdom{
+    background-color: var(--light_Green);
     width: clamp(80%, 1.7vw, 32rem);
     max-width: 800px;
-    height: clamp(5rem, 1.7vw, 2rem);
+    
 
-    font-size:clamp(1.1rem, 1.7vw, 2rem);
-    padding: 1% 3%;
+    font-size:clamp(.9rem, 1.7vw, 1.3rem);
+    padding: 2%;
 }
 .section_All_Elements textarea{
     width: clamp(80%, 1.7vw, 10rem);
